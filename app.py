@@ -3,9 +3,9 @@ from flask import Flask, render_template, request, redirect, url_for
 app = Flask(__name__)
 
 books = [
-    {"id": 1, "title": "Book One", "author": "Author A", "year": 2001},
-    {"id": 2, "title": "Book Two", "author": "Author B", "year": 2002},
-    {"id": 3, "title": "Book Three", "author": "Author C", "year": 2003}
+    {"id": 1, "title": "Book 1", "author": "Author 1", "year": 1},
+    {"id": 2, "title": "Book 2", "author": "Author 2", "year": 2},
+    {"id": 3, "title": "Book 3", "author": "Author 3", "year": 3}
 ]
 
 @app.route('/')
