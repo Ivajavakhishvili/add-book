@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Books List</h2>
+<ul>
+    {% for book in books %}
+    <li>
+        <a href="{{ url_for('show', book_id=book.id) }}">{{ book.name }}</a> by {{ book.author }} ({{ book.year }})
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}
